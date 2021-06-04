@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends "basic_template_app/base.html" %}
+{% block body_block %}
+<h1>Im Index Page</h1>
+<h2>This is Template inhereted</h2>
+
+      <!-- Template Filter -->
+        <h1>{{name}}</h1>
+
+        <!-- Make every letter capital , using predefined function upper -->
+        <h3>{{name|upper}}</h3>
+
+        <!-- Using Custom filter -->
+
+        <h1>{{ name|cut:'Hello'}}</h1>
+
+        <h2>{{Number}}</h2>
+
+        <!-- Adding 5 to the given number by passing value -->
+        <h2>{{Number|add:5}}</h2>
+
+{% endblock%}
